@@ -14,7 +14,7 @@ const Banner = () => {
             <img src={bannerImg} alt="" />
           </div>
           <div className="space-y-4 text-center">
-            <h2 className="text-5xl font-bold text-white">
+            <h2 className=" text-4xl  md:text-5xl font-bold text-white">
               Assemble Your Ultimate Dream 11 Cricket Team
             </h2>
             <p className="font-inter font-medium text-white opacity-70 text-2xl">
