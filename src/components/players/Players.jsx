@@ -1,14 +1,13 @@
 import React from "react";
 import { use } from "react";
+import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 
 const Players = ({ playerPromise }) => {
-  const data = use(playerPromise);
-
+  const playerData = use(playerPromise);
+  // console.log(data);
   return (
-    <div>
-      {data.map((player) => {
-        <h2>player: {player.playerName}</h2>;
-      })}
+    <div className="container mx-auto pt-20">
+      <AvailablePlayers playerData={playerData} />
     </div>
   );
 };
