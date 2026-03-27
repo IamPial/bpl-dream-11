@@ -57,7 +57,7 @@
     "playerImg": "https://i.ibb.co.com/DHNKtdTH/steve-smith3.jpg",
     "battingStyle": "Right-hand bat",
     "playerRating": 9.3,
-    "playerPrice": 1450000,
+    "playerPrice": 14500,
     "bowlingStyle": "Right-arm legbreak"
   },
   {
@@ -67,7 +67,7 @@
     "playerImg": "https://i.ibb.co.com/fd9cYJV8/joe-root.webp",
     "battingStyle": "Right-hand bat",
     "playerRating": 9.0,
-    "playerPrice": 1350000,
+    "playerPrice": 13500,
     "bowlingStyle": "Right-arm offbreak"
   },
   {
@@ -77,7 +77,7 @@
     "playerImg": "https://i.ibb.co.com/jvTKtNfW/mustafiz.webp",
     "battingStyle": "Left-hand bat",
     "playerRating": 9.1,
-    "playerPrice": 1200000,
+    "playerPrice": 17500,
     "bowlingStyle": "Left-arm fast-medium"
   },
   {
@@ -87,7 +87,7 @@
     "playerImg": "https://i.ibb.co.com/Jw9Km6Xq/trent-boult.jpg",
     "battingStyle": "Right-hand bat",
     "playerRating": 9.2,
-    "playerPrice": 1400000,
+    "playerPrice": 14000,
     "bowlingStyle": "Left-arm fast-medium"
   }
 ]
