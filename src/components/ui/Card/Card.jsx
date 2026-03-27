@@ -18,10 +18,10 @@ const Card = ({
       alert(`${player.playerName} is selected`);
       setCoin(coin - player.playerPrice);
       setIsSelected(true);
+      setSelectedPlayers([...selectedPlayers, player]);
     } else {
       alert("Not enough coin to selected this player");
     }
-    setSelectedPlayers([...selectedPlayers, player]);
   };
   return (
     <div>
