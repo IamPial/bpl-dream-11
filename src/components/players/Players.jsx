@@ -12,13 +12,13 @@ const Players = ({ playerPromise }) => {
         <div className="flex items-center">
           <button
             onClick={() => setSelectedType("available")}
-            className={`btn ${selectedType === "available" ? "bg-[#E7FE29]" : "bg-base-100"} rounded-r-none rounded-l-xl`}
+            className={`btn ${selectedType === "available" ? "bg-[#E7FE29] font-bold" : "bg-base-100 font-normal"} rounded-r-none rounded-l-xl`}
           >
             Available
           </button>
           <button
             onClick={() => setSelectedType("selected")}
-            className={`btn ${selectedType === "selected" ? "bg-[#E7FE29]" : "bg-base-100"} rounded-l-none rounded-r-xl`}
+            className={`btn ${selectedType === "selected" ? "bg-[#E7FE29] font-bold" : "bg-base-100 font-normal"} rounded-l-none rounded-r-xl`}
           >
             Selected(0)
           </button>
