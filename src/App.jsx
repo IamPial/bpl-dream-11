@@ -23,7 +23,7 @@ const App = () => {
           </div>
         }
       >
-        <Players playerPromise={playerPromise} />
+        <Players playerPromise={playerPromise} setCoin={setCoin} />
       </Suspense>
     </div>
   );
