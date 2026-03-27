@@ -6,6 +6,7 @@ import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 const Players = ({ playerPromise, setCoin, coin }) => {
   const playerData = use(playerPromise);
   const [selectedType, setSelectedType] = useState("available");
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
   return (
     <div className="container mx-auto py-14">
       <div className="py-5 flex justify-between items-center">
@@ -35,9 +36,11 @@ const Players = ({ playerPromise, setCoin, coin }) => {
           playerData={playerData}
           setCoin={setCoin}
           coin={coin}
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
         />
       ) : (
-        <SelectedPlayers />
+        <SelectedPlayers selectedPlayers={selectedPlayers} />
       )}
     </div>
   );
