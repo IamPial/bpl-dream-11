@@ -31,7 +31,7 @@ const Card = ({ player }) => {
               <p className="text-right">{player.bowlingStyle}</p>
             </div>
             <div className="card-actions justify-end">
-              <p className="font-semibold">Price : $ {player.playerPrice} </p>
+              <p className="font-semibold">Price : ${player.playerPrice} </p>
               <button className="btn ">Choose Player</button>
             </div>
           </div>
