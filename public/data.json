@@ -6,7 +6,7 @@
     "playerImg": "https://i.ibb.co.com/pvqxYZF5/Virat-Kohli.jpg",
     "battingStyle": "Right-hand bat",
     "playerRating": 9.8,
-    "playerPrice": 1500000,
+    "playerPrice": 15000,
     "bowlingStyle": "Right-arm medium"
   },
   {
@@ -16,7 +16,7 @@
     "playerImg": "https://i.ibb.co.com/LdkgPK2M/Babar-Azam.jpg",
     "battingStyle": "Right-hand bat",
     "playerRating": 9.5,
-    "playerPrice": 1400000,
+    "playerPrice": 14000,
     "bowlingStyle": "Right-arm offbreak"
   },
   {
@@ -26,7 +26,7 @@
     "playerImg": "https://i.ibb.co.com/pv4gVDm5/Ben-Stokes.jpg",
     "battingStyle": "Left-hand bat",
     "playerRating": 9.2,
-    "playerPrice": 1600000,
+    "playerPrice": 16000,
     "bowlingStyle": "Right-arm fast-medium"
   },
   {
@@ -36,7 +36,7 @@
     "playerImg": "https://i.ibb.co.com/yBX8rHD9/Kane-Williamson.webp",
     "battingStyle": "Right-hand bat",
     "playerRating": 9.1,
-    "playerPrice": 1300000,
+    "playerPrice": 13000,
     "bowlingStyle": "Right-arm offbreak"
   },
   {
@@ -46,7 +46,7 @@
     "playerImg": "https://i.ibb.co.com/PZ5HwCGm/Shakib-Al-Hasan.jpg",
     "battingStyle": "Left-hand bat",
     "playerRating": 9.4,
-    "playerPrice": 1200000,
+    "playerPrice": 17000,
     "bowlingStyle": "Left-arm orthodox"
   },
 
