@@ -16,7 +16,11 @@ const App = () => {
       <Navbar />
       <Banner />
       <Suspense
-        fallback={<span className="loading loading-bars loading-xl"></span>}
+        fallback={
+          <div className="  flex items-center justify-center py-30">
+            <span className=" loading loading-bars loading-xl "></span>
+          </div>
+        }
       >
         <Players playerPromise={playerPromise} />
       </Suspense>
