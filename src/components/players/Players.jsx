@@ -8,7 +8,11 @@ const Players = ({ playerPromise }) => {
   return (
     <div className="container mx-auto py-14">
       <div className="py-5 flex justify-between items-center">
-        <h2 className="text-3xl font-bold">Available Player</h2>
+        {selectedType === "available" ? (
+          <h2 className="text-3xl font-bold">Available Player</h2>
+        ) : (
+          <h2 className="text-3xl font-bold">Selected Player (2/6)</h2>
+        )}
         <div className="flex items-center">
           <button
             onClick={() => setSelectedType("available")}
