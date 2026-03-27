@@ -18,12 +18,12 @@ const App = () => {
       <Banner />
       <Suspense
         fallback={
-          <div className="  flex items-center justify-center py-30">
-            <span className=" loading loading-bars loading-xl "></span>
+          <div className="flex items-center justify-center py-30">
+            <span className=" loading loading-bars loading-xl"></span>
           </div>
         }
       >
-        <Players playerPromise={playerPromise} setCoin={setCoin} />
+        <Players playerPromise={playerPromise} setCoin={setCoin} coin={coin} />
       </Suspense>
     </div>
   );
