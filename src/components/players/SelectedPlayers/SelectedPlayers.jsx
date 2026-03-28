@@ -1,7 +1,6 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
 
-//TODO: work with delete functionality
 const SelectedPlayers = ({
   selectedPlayers,
   setSelectedPlayers,
