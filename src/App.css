@@ -22,3 +22,9 @@
   background-color: #e7fe29;
   color: #131313;
 }
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
