@@ -9,7 +9,7 @@ const Footer = () => {
           <img src={footerLogo} alt="BPL LOGO" />
         </div>
 
-        <div className="grid grid-cols-3 gap-3 justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-3 px-4 md:px-0  justify-between">
           <div className="flex flex-col space-y-3 ">
             <h2 className="font-semibold text-lg text-white">About Us</h2>
             <p className="leading-6 text-white opacity-60 ">
