@@ -3,7 +3,7 @@ import footerLogo from "../../assets/logo-footer.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#06091A] py-10">
+    <div className="bg-[#06091A] pt-10">
       <div className="container mx-auto pt-30">
         <div className="flex justify-center pb-12">
           <img src={footerLogo} alt="BPL LOGO" />
@@ -45,6 +45,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="pt-18">
+        <div className="divider"></div>
+        <p className="py-5 text-center leading-6 text-white opacity-60">
+          @2024 Your Company All Rights Reserved.
+        </p>
       </div>
     </div>
   );
