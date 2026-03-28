@@ -3,7 +3,7 @@ import footerLogo from "../../assets/logo-footer.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#06091A] pt-10">
+    <div className="bg-[#06091A] pt-20">
       <div className="container mx-auto pt-30">
         <div className="flex justify-center pb-12">
           <img src={footerLogo} alt="BPL LOGO" />
