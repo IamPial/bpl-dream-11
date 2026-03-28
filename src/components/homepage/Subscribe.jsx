@@ -3,10 +3,10 @@ import bgShadow from "../../assets/bg-shadow.png";
 
 const Subscribe = () => {
   return (
-    <div className="py-16">
-      <div className="container mx-auto p-6 border border-gray-500 rounded-xl bg-transparent ">
+    <div className="py-30 relative">
+      <div className="container mx-auto p-6 border border-white rounded-xl  absolute -bottom-40 left-10 z-10 backdrop-brightness-150 ">
         <div
-          className="flex justify-center  items-center flex-col rounded-xl py-20 border border-gray-500 bg-cover bg-center bg-no-repeat"
+          className="flex justify-center bg-white  items-center flex-col rounded-xl py-20   bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${bgShadow})` }}
         >
           <h2 className="text-[32px] font-bold text-slate-900">
