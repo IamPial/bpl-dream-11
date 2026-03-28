@@ -22,33 +22,44 @@ const SelectedPlayers = ({
   return (
     <div>
       <div className=" space-y-5">
-        {selectedPlayers.map((player) => {
-          return (
-            <div className="border border-gray-200 p-4 rounded-xl">
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-5">
-                  <img
-                    src={player.playerImg}
-                    className="h-20 w-25 rounded-xl"
-                    alt={player.playerName}
-                  />
-                  <div>
-                    <h2 className="font-bold text-lg">{player.playerName}</h2>
-                    <p className="font-semibold text-gray-500">
-                      {player.playerType}
-                    </p>
+        {selectedPlayers.length === 0 ? (
+          <div className="h-60 flex flex-col justify-center items-center gap-4">
+            <h2 className="font-bold text-4xl text-neutral-700">
+              No Players Selected Yet
+            </h2>
+            <p className="font-medium text-lg text-gray-500">
+              Go to available tab to selected players
+            </p>
+          </div>
+        ) : (
+          selectedPlayers.map((player) => {
+            return (
+              <div className="border border-gray-200 p-4 rounded-xl">
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center gap-5">
+                    <img
+                      src={player.playerImg}
+                      className="h-20 w-25 rounded-xl"
+                      alt={player.playerName}
+                    />
+                    <div>
+                      <h2 className="font-bold text-lg">{player.playerName}</h2>
+                      <p className="font-semibold text-gray-500">
+                        {player.playerType}
+                      </p>
+                    </div>
                   </div>
+                  <button
+                    onClick={() => handleDelete(player)}
+                    className="btn text-error"
+                  >
+                    <MdDelete />
+                  </button>
                 </div>
-                <button
-                  onClick={() => handleDelete(player)}
-                  className="btn text-error"
-                >
-                  <MdDelete />
-                </button>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+        )}
       </div>
     </div>
   );
