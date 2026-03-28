@@ -1,5 +1,6 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const SelectedPlayers = ({
   selectedPlayers,
@@ -15,6 +16,7 @@ const SelectedPlayers = ({
     );
     setSelectedPlayers(filteredPlayers);
     setCoin(coin + player.playerPrice);
+    toast.success(`${player.playerName} is deleted!`);
   };
 
   return (
