@@ -3,6 +3,7 @@ import { Suspense, useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/homepage/Banner";
 import Players from "./components/players/Players";
+import { ToastContainer } from "react-toastify";
 
 const fetchPlayer = async () => {
   const res = await fetch("/data.json");
@@ -25,6 +26,7 @@ const App = () => {
       >
         <Players playerPromise={playerPromise} setCoin={setCoin} coin={coin} />
       </Suspense>
+      <ToastContainer />
     </div>
   );
 };
