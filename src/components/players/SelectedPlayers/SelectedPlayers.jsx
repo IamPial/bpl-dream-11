@@ -1,8 +1,23 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
 
-const SelectedPlayers = ({ selectedPlayers }) => {
+//TODO: work with delete functionality
+const SelectedPlayers = ({
+  selectedPlayers,
+  setSelectedPlayers,
+  coin,
+  setCoin,
+}) => {
   console.log(selectedPlayers);
+
+  const handleDelete = (player) => {
+    const filteredPlayers = selectedPlayers.filter(
+      (p) => p.playerName !== player.playerName,
+    );
+    setSelectedPlayers(filteredPlayers);
+    setCoin(coin + player.playerPrice);
+  };
+
   return (
     <div>
       <div className=" space-y-5">
@@ -23,7 +38,10 @@ const SelectedPlayers = ({ selectedPlayers }) => {
                     </p>
                   </div>
                 </div>
-                <button className="btn text-error">
+                <button
+                  onClick={() => handleDelete(player)}
+                  className="btn text-error"
+                >
                   <MdDelete />
                 </button>
               </div>
